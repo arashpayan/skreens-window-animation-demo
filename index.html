@@ -1,0 +1,22 @@
+<!DOCTYPE html><html>
+<head>
+    <meta charset="utf-8">
+    <script src="code.js"></script>
+</head>
+
+<body>
+    <ol>
+        <li>Modify <code>code.js</code> according to the instructions at the top of the file</li>
+        <li>Then force reload this page (Ctrl-Shift-R)</li>
+        <li>Watch the JS console. In case the socket disconnect, you'll need to reload the page, because there's no error handling in this code.</li>
+    </ol>
+
+    <form>
+        <label>HDMI Window Id: </label> <input id="window_id_field" type="number" min="1" value="7" step="1" /><br/>
+        <label>Animation Duration (in seconds):</label> <input id="duration_field" type="number" step=".1" value="2.5" /><br/>
+        <label>Frames per second (1-60):</label> <input id="fps_field" type="number" step="1" min="1" max="60" value="30" /><br/>
+        <button type="button" onclick="onAnimateClicked();">Animate all the things!</button>
+    </form>
+</body>
+
+</html>
